@@ -274,10 +274,10 @@ if __name__ == "__main__":
     document_path = os.getenv("DOCUMENT_PATH", "your_document.txt")
     host = os.getenv("HOST", "0.0.0.0")
     port = int(os.getenv("PORT", 5000))
-    
+
     # Initialize the QA system before starting the server
     initialize_qa_system(document_path)
-    
-    # Start the Flask server
+
+    # Start the Flask server — no debug mode in production
     print(f"Starting server on {host}:{port}")
-    app.run(host=host, port=port, debug=True)
+    app.run(host=host, port=port)
