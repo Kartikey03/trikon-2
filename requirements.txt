@@ -6,3 +6,4 @@ openai
 faiss-cpu
 PyPDF2
 gunicorn
+langchain_community
