@@ -1,82 +1,112 @@
-TRIKON 2.0 - a tech triathlon 
- 
-3rd-4th May - 28 Hours I AUDITORIUM-4 
- 
- 
-About TRIKON 2.0 
-Following the grand success of TRIKON 1.0, we aim to make TRIKON 2.0 
-an even bigger and more impactful experience. This 28-hour hackathon 
-is designed to challenge participants in innovation, problem-solving, 
-and full stack driven software and hardware development. Participants 
-will compete in a structured three-round challenge, focusing on idea 
-pitching, prototype development, and final presentation. 
-This year's event will bring together 30 teams, each consisting of 3-5 
-members, totaling approximately 150 participants. The event will 
-provide an opportunity for students to explore cutting-edge 
-technologies, enhance their technical skills, and gain hands-on 
-experience through mentorship and competition. 
-Grand Launch of TRIKON 2.0 
-We are set to launch TRIKON 2.0 on April 7, 2025, on a grand scale. The 
-launch event will set the stage for an exciting journey ahead, creating 
-anticipation and enthusiasm among students, faculty, and industry 
-professionals. It will serve as a platform to introduce the event 
-structure, themes, and objectives while highlighting the immense 
-opportunities this hackathon offers. 
-Event Structure: 
-Venue: Audi-4, Audi-3, MIET, Meerut 
-Participants: 30 teams, each consisting of 3 to 5 members, 
-totaling approximately 150 participants. 
-Hackathon Format: 
-Day 1 : Initial elimination rounds, with 20 teams advancing 
-to the next phase. 
-Day 2: Final elimination round, with 10 teams competing in 
-the ultimate pitch presentation. 
-Grand prize distribution for the top three teams. 
-Rounds: 
-VisionForge — Shape your idea, structure your plan, and lay 
-the groundwork. 
-BuildBlitz — A high-energy overnight sprint to bring your vision to life. 
-Pinnacle Pitch — Present your masterpiece and claim the top spot. 
- 
- 
-Guest Invitations &Jury Panel 
-To elevate the stature of TRIKON 2.0, we are honored to invite 
-esteemed dignitaries and industry leaders: 
-Inauguration Ceremony: We will invite Arun Govil Ji and 
-the District Magistrate of Meerut, as we emphasize 
-promoting E-Governance and technological 
-advancements. 
-Final Evaluation Panel: The jury for the final evaluation will 
-comprise five top industry experts from leading companies. We 
-plan to invite: 
-The Founder of GeeksforGeeks - Mr.Sandeep Jain 
-The Chief Digital Officer (CDO) of Uttar Pradesh  
-Tech Leaders from prominent organizations 
- 
-Objective of TRIKON 2.0 
-For Participants: 
-Develop innovative solutions and enhance pitching skills. 
-Network with industry experts and like-minded peers. 
-Compete, learn, and explore career opportunities. 
-Converting their projects to Business Models as we are moving towards 
-e-governance and using governmental problem statements. 
-For Team Intellia (MIET Students): 
-Foster innovation and build a strong tech community. 
-Strengthen industry connections and collaborations. 
-Enhance leadership and event management skills. 
-Expand TRIKON’s impact as a premier hackathon. 
- 
-Intellia’s Growth till date: 
-Technical Development: 
-Website Development (Development of website with react framework and hosting on go 
-daddy with firebase as a backend) 
-App Development (Development of application with college navigation and m2m planner of 
-event) 
-Automation (Sending Mails, Generating OTP, Attendance Mapping, Certificate Creation) 
-Non - Technical Development  
-Communication Skills (Contacting Sponsors, Contacting Industrial Specialists, Contacting 
-Government Officials) 
-Management Skills (Creating events, m2m, reports, application) 
-Designing Skills (creating posters, videos, animation) 
-Media Skills (capturing moment of the days by media covering gadgets) 
+Trix is the official mascot of Trikon 2.0, designed as a glowing, triangle-shaped AI
+bot with big eyes, a bright smile, and robotic limbs. Friendly, witty, and curious, Trix
+acts as a virtual host and guide throughout the hackathon. It functions as an
+interactive chatbot, helping with schedules, registration, venue navigation, and
+updates. Trix also boosts engagement through providing a chatbot . Representing AI
+and automation, Trix symbolizes the core spirit of Trikon 2.0—innovation, creativity,
+and tech-forward thinking—while also serving as a branding icon for sponsors and
+enhancing the overall participant experience.
+Trix – The Official Mascot of Trikon 2.0
+Overview: Trix is the vibrant and intelligent mascot of Trikon 2.0, embodying the spirit
+of innovation, creativity, and tech-driven energy that defines our flagship hackathon.
+Designed as a futuristic digital assistant, Trix represents the perfect blend of
+technology and human-centric interaction – a symbol of how AI and tech are shaping
+the future.
+Identity of TriX Name: Trix Type: AI-inspired digital bot Personality: Friendly, curious,
+witty, and resourceful Role: Virtual host, participant guide, and branding icon for
+Trikon 2.0 Appearance:Trix is a glowing, triangle-shaped bot with big eyes, a bright
+smile, and cute robotic limbs..
+Features and Functional Role:
+1. Interactive Chatbot: Trix is more than just a visual mascot. It functions as an
+interactive chatbot that assists participants with queries related to:
+2. Engagement Tool: Trix helps boost engagement through:
+Gamified interactions
+Trivia or mini-challenges on social media
+Real-time polls and fun updates during the event
+3. Tech Symbolism: As a chatbot, Trix stands as a representation of AI and
+automation – core domains of Trikon 2.0. It encourages participants to build
+solutions that are smart, efficient, and people-friendly.
+Why Trix Matters:
+For Participants: Offers a tech-savvy, reliable companion throughout the hackathon
+experience.
+For Sponsors: Acts as a digital face of the event, offering branding integration
+opportunities (e.g., “Powered by [Sponsor]” in chatbot responses).
+For Trikon’s Brand Identity: Sets Trikon apart by showcasing innovation not just in
+competition, but in the entire experience.
+Glimpse of last hackathon, Trikon 1.0 in april 2024
+Intellia organized an exhilarating hackathon named Trikon - A Tech Triathlon, a
+28-hour marathon of innovation and creativity. With 150 students forming 30+ teams,
+the event was a dynamic blend of fun and tech activities. Participants engaged in
+coding sprints, technical quizzes, and project development, showcasing their skills
+and fostering a spirit of collaboration and competition. Trikon provided an excellent
+platform for students to learn, innovate, and network, making it a memorable and
+enriching experience for all involved.
+Hackathon schedule and updates for this trikon 2.0
+08:30 a.m. - 10:00 a.m. Welcoming (Entry)
+10:00 a.m. - 10:30 a.m. Welcome Speech and Inauguration
+10:30 a.m. - 11:00 a.m. Event Explanation
+11:00 a.m. - 1:00 p.m. Development and Mentoring Session 1
+1:00 p.m. - 2:00 p.m. Lunch
+2:00 p.m. - 4:00 p.m. Development and Judging Session
+4:30 p.m. First Elimination
+05:00 p.m. - 06:30 p.m. Interactive session 1 / Activity + Snacks
+06:30 p.m. - 08:00 p.m. Development
+08:00 p.m. - 09:30 p.m. Dinner
+09:30 p.m. - 10:00 p.m. Interactive Session 2/ Activity
+10:00 p.m. - 02:00 a.m. Development and Mentoring Session 2
+02:00 a.m. - 02:30 a.m. Mid Night Snack
+02:30 a.m. - 04:00 a.m. Interactive session 3 / Activity
+04:00 a.m. - 06:00 a.m. Development and Judging Session
+08:00 a.m. Elimination + Breakfast
+09:00 a.m. - 10:00 a.m. Final Development
+10:30 a.m. - 01:30 p.m. Pitching
+01:30 p.m. - 02:00 p.m. Felicitation Ceremony
+Registration and team info:
+Grand Launch of TRIKON 2.0
+We are set to launch TRIKON 2.0 on April 18, 2025, on a grand scale. The launch
+event will set the stage for an exciting journey ahead, creating anticipation and
+enthusiasm among students, faculty, and industry professionals. It will serve as a
+platform to introduce the event structure, themes, and objectives while
+highlighting the immense opportunities this hackathon offer.
+Event Structure:
+Venue: Audi-4, Audi-3, MIET, Meerut
+Participants: 30 teams, each consisting of 3 to 5 members, totaling approximately
+150 participants.
+Hackathon Format:
+Day 1 : Initial elimination rounds, with 20 teams advancing to the next phase.
+Day 2: Final elimination round, with 10 teams competing in the ultimate pitch
+presentation.
+Grand prize distribution for the top three teams.
+Rounds:
+VisionForge — Shape your idea, structure your plan, and lay the groundwork.
+BuildBlitz — A high-energy overnight sprint to bring your vision to life.
+Pinnacle Pitch — Present your masterpiece and claim the top spot.
+Objective of TRIKON 2.0
+For Participants:
+Develop innovative solutions and enhance pitching skills.
+Network with industry experts and like-minded peers.
+Compete, learn, and explore career opportunities.
+Converting their projects to Business Models as we are moving towards
+e-governance and using governmental problem statements.
+For Team Intellia (MIET Students):
+Foster innovation and build a strong tech community.
+Strengthen industry connections and collaborations.
+Enhance leadership and event management skills.
+Expand TRIKON’s impact as a premier hackathon.
+Intellia’s Growth till date:
+Technical Development:
+Website Development (Development of website with react framework and hosting
+on go daddy with firebase as a backend)
+App Development (Development of application with college navigation and m2m
+planner of event)
+Automation (Sending Mails, Generating OTP, Attendance Mapping, Certificate
+Creation)
+Non - Technical Development
+Communication Skills (Contacting Sponsors, Contacting Industrial Specialists,
+Contacting Government Officials)
+Management Skills (Creating events, m2m, reports, application)
+Designing Skills (creating posters, videos, animation)
+Media Skills (capturing moment of the days by media covering gadgets)
 Creativity & Craft (Transforming ideation to reality by hand on craft)
+Problem statements and rules
+Venue navigation and announcements
