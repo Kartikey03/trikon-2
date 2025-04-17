@@ -301,13 +301,16 @@ def index():
 def initialize():
     """Start the initialization process."""
     global is_initializing, initialization_error
-    
+
     if not is_initializing:
         is_initializing = True
         initialization_error = None
         threading.Thread(target=initialize_qa_system_thread).start()
-    
-    return redirect(url_for('index'))
+        initialized = True
+    else:
+        initialized = False  # Already initializing
+
+    return jsonify({'initialized': initialized})
 
 @app.route('/web-ask', methods=['POST'])
 def web_ask():
