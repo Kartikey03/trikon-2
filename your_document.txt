@@ -48,3 +48,85 @@ The Designing Head is Vaishnavi Pathak. The Social Media Head is Atharv Gupta. T
 
 Management Team Members
 The Event Management Head is Kashish Sharma. The Quality Assurance Head is Stuti. The Operations Head is Shivendra Ojha. The Data Management Head is Prayesi Agarwal. Event Management Members are Pragati Tomar and Jayant Bansal. Quality Assurance Members are Anushka Singhal and Sanyam Jain.
+
+Trikon 2.0 Participant Information
+
+Introduction
+Trikon 2.0 is an event that features 31 teams with a total of 127 participants. These teams are organized into 4 mentor groups, with guidance provided by 4 distinct mentors or mentor pairs. Each team has a unique Team ID, team name, and a set of team members working together under their assigned mentors.
+
+Team Information:
+
+Team T1 is named "Code_breakers" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 4 members: Satyam Singh, Shreyanshu Kumar, Shreesh Pandey, Shivam Sharma.
+
+Team T2 is named "Team 404" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 5 members: Dhruv Rastogi, Kushagra Sharma, Avantika Malik, Arshana Mittal, Arsh Balyan.
+
+Team T3 is named "Code warriors" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 3 members: Chitransh sahrawat, Aditya tiwari, Rishank singh.
+
+Team T4 is named "Code Bhairav" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 4 members: Aviraj Singh, Anshika Panwar, Yugank Dabas, Kriti Gaur.
+
+Team T5 is named "HackSquad" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 4 members: Sahil Saini, Vaibhav, Vivek Kumar, Abhishek Bharti.
+
+Team T6 is named "Byte Builders" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 3 members: Ishu Jain, Bhumi Jain, Shreyal Jain.
+
+Team T7 is named "HackBoyz" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 5 members: Ankit Kumar, Dherya Pratap, Aryan Tyagi, Aviral Raghav, Vishal Tomar.
+
+Team T8 is named "Team-4D" and belongs to mentor group G1. They are guided by Adhiraj Pandey and Ashutosh Gautam. The team consists of 4 members: Deekshant Tyagi, Deepanshu, Dipanshu Verma, Harsh.
+
+Team T9 is named "Byte Crew" and belongs to mentor group G2. They are guided by Muskan Sindhu and Gaurav Yadav. The team consists of 3 members: Abhay Choudhary, Anshika Verma, Deepanshu Som.
+
+Team T10 is named "Algo Ninjas" and belongs to mentor group G2. They are guided by Muskan Sindhu and Gaurav Yadav. The team consists of 5 members: Kashish Sharma, mohdkaif, Uday Singh, Kinshuk Chauhan, Vansh Sharma.
+
+Team T11 is named "SynapseForge" and belongs to mentor group G2. They are guided by Muskan Sindhu and Gaurav Yadav. The team consists of 3 members: RITIK KUMAR, Ishant Arya, Ujjwal singh.
+
+Team T12 is named "PRINIX" and belongs to mentor group G2. They are guided by Muskan Sindhu and Gaurav Yadav. The team consists of 5 members: Ajay Kumar Sharma, Aditi Sharma, Bhavya Singhal, Anubhav Karnwal, Avijeet Pal.
+
+Team T13 is named "Suspectur" and belongs to mentor group G2. They are guided by Muskan Sindhu and Gaurav Yadav. The team consists of 4 members: Kumari Garima, Priyanshu Rajput, Preet Pratap Singh Bhati, Piyush Goel.
+
+Team T14 is named "SkillSwap" and belongs to mentor group G2. They are guided by Muskan Sindhu and Gaurav Yadav. The team consists of 5 members: Deepanshu Sharma, Palak Aggarwal, Yash Rastogi, dhruvgupta, Gungun Goel.
+
+Team T15 is named "3.99bits" and belongs to mentor group G2. They are guided by Muskan Sindhu and Gaurav Yadav. The team consists of 4 members: Ayush, Rajveer Singh Deshwal, Ekta Gupta, Rakshita Chandel.
+
+Team T16 is named "Team Trinetra" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 3 members: Arun Vats, Kartik Daksh, Prashant Upadhyay.
+
+Team T17 is named "Predators" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 4 members: Muneer Zaidi, Muneer Ali, Tanishq Verma, Mayank Pal.
+
+Team T18 is named "Visum" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 4 members: Harsh Raj Shukla, aditya raj, Priyanshu Roushan, Ashwani Raj.
+
+Team T19 is named "CodeBlooded" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 4 members: Divya Singhal, Dhruv Rastogi, Avni Sharma, Ayush Kumar.
+
+Team T20 is named "Medibuddy" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 5 members: Abhay Maheshwari, Kartik Verma, Naman Agarwal, Khushi Gupta, Komal.
+
+Team T21 is named "Dev Dynamos" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 4 members: Kartik Agarwal, Parv jain, Vartika jain, Lakshya agarwal.
+
+Team T22 is named "ONE CODE" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 4 members: Utkarsh Sharma, Prakhar Kumar, Naman chaudhary, Ansh Goel.
+
+Team T23 is named "vaartalink" and belongs to mentor group G3. They are guided by Yukti Thakral and Atul Pratap Singh. The team consists of 5 members: kiranbakshi, Ankita sahu, Ajay dhariya, Mihit rajput, Tushar tyagi.
+
+Team T24 is named "Tech Innovators" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 4 members: Deepak Joshi, Devansh Mittal, Devkesh Yada, kartikey kumar.
+
+Team T25 is named "ESZ ESSENTIALZ" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 5 members: Vedansh, Prafullit bhattacharya, Varshit tyagi, Vishesh jindal, Mohini teotia.
+
+Team T26 is named "AR-MED" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 4 members: Mridul Raj Gupta, Saad Salim, Prince Goyal, Rishabh Sharma.
+
+Team T27 is named "Tech Wizards" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 5 members: Mayank Chaudhary, Manu, Irtiqa, Rakshit, Priyansh.
+
+Team T28 is named "THEBOYS" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 6 members: Nishant singh, Shantanu yadav, Abhishek soam, Rohan saini, Vaibhav singh, Anshika chaudhary.
+
+Team T29 is named "Team Hash" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 3 members: Shubham Rajpoot, Mansi, Chirag Mittal.
+
+Team T30 is named "3 Bits" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 3 members: Yagyansh Singh Deshwal, Kunj Agarwal, Sparsh Pandey.
+
+Team T31 is named "Syntax-Analysers" and belongs to mentor group G4. They are guided by Shraddha Sharma and Yash Sharma. The team consists of 3 members: Mayank Arya, Shivam, Kajal Maurya.
+
+Mentor Group Information
+
+Mentor Group G1 is led by Adhiraj Pandey and Ashutosh Gautam. This group oversees 8 teams: Code_breakers, Team 404, Code warriors, Code Bhairav, HackSquad, Byte Builders, HackBoyz, and Team-4D. These teams are identified as T1 through T8.
+
+Mentor Group G2 is led by Muskan Sindhu and Gaurav Yadav. This group guides 7 teams: Byte Crew, Algo Ninjas, SynapseForge, PRINIX, Suspectur, SkillSwap, and 3.99bits. These teams are labeled T9 through T15.
+
+Mentor Group G3 is led by Yukti Thakral and Atul Pratap Singh. This group mentors 8 teams: Team Trinetra, Predators, Visum, CodeBlooded, Medibuddy, Dev Dynamos, ONE CODE, and vaartalink. These teams are identified as T16 through T23.
+
+Mentor Group G4 is led by Shraddha Sharma and Yash Sharma. This group oversees 8 teams: Tech Innovators, ESZ ESSENTIALZ, AR-MED, Tech Wizards, THEBOYS, Team Hash, 3 Bits, and Syntax-Analysers. These teams are labeled T24 through T31.
+
+Participant Distribution
+Trikon 2.0 has a diverse set of teams with varying numbers of participants. Most teams consist of 3-5 members, with Team T28 ("THEBOYS") being the largest with 6 members. The smallest teams have 3 members each. Each team brings unique skills and perspectives to the event under the guidance of experienced mentors.
