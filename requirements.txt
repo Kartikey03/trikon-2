@@ -8,3 +8,5 @@ PyPDF2
 gunicorn
 langchain_community
 tiktoken
+langchain-google-genai
+google-generativeai

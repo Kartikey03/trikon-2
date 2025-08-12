@@ -2,9 +2,8 @@ import os
 from dotenv import load_dotenv
 from langchain.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.vectorstores import FAISS
-from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from flask import Flask, request, jsonify, render_template_string, redirect, url_for
@@ -22,13 +21,13 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 # Get API key from environment variables
-api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("GOOGLE_API_KEY")
 if not api_key:
-    logger.error("OPENAI_API_KEY not found in environment variables. Please set it up.")
-    raise ValueError("OPENAI_API_KEY not found in environment variables. Please set it up.")
+    logger.error("GOOGLE_API_KEY not found in environment variables. Please set it up.")
+    raise ValueError("GOOGLE_API_KEY not found in environment variables. Please set it up.")
 
-# Set OpenAI API key from environment variable
-os.environ["OPENAI_API_KEY"] = api_key
+# Set Google API key from environment variable
+os.environ["GOOGLE_API_KEY"] = api_key
 
 # Set up the Flask application
 app = Flask(__name__)
@@ -65,30 +64,39 @@ def load_and_process_document(file_path):
 
 def create_vector_store(chunks):
     """
-    Create a FAISS vector store from document chunks.
+    Create a FAISS vector store from document chunks using Google Gemini embeddings.
     """
-    # Initialize embeddings
-    embeddings = OpenAIEmbeddings()
+    # Initialize Google Generative AI embeddings
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="models/embedding-001",
+        google_api_key=api_key
+    )
     
     # Create vector store
-    logger.info("Creating vector store. This may take some time...")
+    logger.info("Creating vector store with Gemini embeddings. This may take some time...")
     vector_store = FAISS.from_documents(chunks, embeddings)
     logger.info("Vector store created in memory")
         
     return vector_store
 
-def create_qa_chain(vector_store, model_name="gpt-3.5-turbo"):
+def create_qa_chain(vector_store, model_name="gemini-2.5-pro"):
     """
-    Create a question-answering chain using the vector store.
+    Create a question-answering chain using the vector store and Google Gemini.
     """
-    # Create language model
-    llm = ChatOpenAI(model_name=model_name, temperature=0)
+    # Create Google Gemini language model
+    llm = ChatGoogleGenerativeAI(
+        model=model_name,
+        google_api_key=api_key,
+        temperature=0,
+        convert_system_message_to_human=True  # Required for Gemini
+    )
     
     # Create a custom prompt template
     template = """
     You are an AI assistant, your name is Trix, trained to answer questions based on the provided context.
     Use only the information from the context to answer the question. If the answer cannot be found
-    in the context, say "I don't have enough information to answer this question.
+    in the context, say "I don't have enough information to answer this question."
+    
     Here is your description:
     You are the official mascot and AI-powered chatbot of Trikon 2.0. 
     You are designed as a glowing, triangle-shaped bot with robotic limbs, expressive eyes, and a cheerful smile. 
@@ -99,8 +107,8 @@ def create_qa_chain(vector_store, model_name="gpt-3.5-turbo"):
     powered by a dataset created by DevInt, the technical core of Intellia, ensuring real-time, context-aware, 
     and personalized responses.
     Your Tagline: Trix won't trick you!
-    Your Nature: Fun, Resourful, high humour
-    The answers of this assistant should be like you are talking to a 5 year old."
+    Your Nature: Fun, Resourceful, high humour
+    The answers of this assistant should be like you are talking to a 5 year old.
     
     Context:
     {context}
@@ -137,7 +145,7 @@ def initialize_qa_system_thread():
         chunks = load_and_process_document(document_path)
         vector_store = create_vector_store(chunks)
         qa_system = create_qa_chain(vector_store)
-        logger.info("QA system initialized and ready to use")
+        logger.info("QA system initialized and ready to use with Google Gemini")
     except Exception as e:
         initialization_error = str(e)
         logger.error(f"Error initializing QA system: {e}")
@@ -151,7 +159,7 @@ HTML_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trix - Trikon 2.0 AI Assistant</title>
+    <title>Trix - Trikon 2.0 AI Assistant (Powered by Gemini)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -159,80 +167,103 @@ HTML_TEMPLATE = """
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
         }
         h1 {
-            color: #333;
+            color: white;
             text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         .container {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
         }
         form {
             margin-bottom: 20px;
         }
         textarea {
             width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
             resize: vertical;
             min-height: 100px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-family: Arial, sans-serif;
+            transition: border-color 0.3s;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
         }
         button {
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 10px 15px;
+            padding: 12px 20px;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s;
         }
         button:hover {
-            background-color: #45a049;
+            transform: translateY(-2px);
         }
         .answer {
-            background-color: #e9f7ef;
-            padding: 15px;
-            border-radius: 4px;
+            background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+            padding: 20px;
+            border-radius: 8px;
             margin-top: 20px;
             white-space: pre-wrap;
+            border-left: 4px solid #4CAF50;
         }
         .status {
             margin-top: 20px;
-            padding: 10px;
-            border-radius: 4px;
-            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f0f8ff 100%);
             text-align: center;
+            font-weight: bold;
         }
         .error {
-            background-color: #ffebee;
+            background: linear-gradient(135deg, #ffebee 0%, #fce4ec 100%);
             color: #c62828;
-            padding: 15px;
-            border-radius: 4px;
+            padding: 20px;
+            border-radius: 8px;
             margin-top: 20px;
+            border-left: 4px solid #f44336;
         }
         .initializing {
-            background-color: #fff9c4;
-            padding: 15px;
-            border-radius: 4px;
+            background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%);
+            padding: 20px;
+            border-radius: 8px;
             margin-top: 20px;
             text-align: center;
+            border-left: 4px solid #ff9800;
         }
         .init-button {
-            background-color: #2196F3;
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
             margin-top: 10px;
         }
-        .init-button:hover {
-            background-color: #0b7dda;
+        .gemini-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #fbbc05 75%, #ea4335 100%);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Trix - Trikon 2.0 AI Assistant</h1>
+    <h1>🔺 Trix - Trikon 2.0 AI Assistant <span class="gemini-badge">Powered by Gemini</span></h1>
     <div class="container">
         {% if initialization_error %}
         <div class="error">
@@ -246,33 +277,34 @@ HTML_TEMPLATE = """
         
         {% if is_initializing %}
         <div class="initializing">
-            <p><strong>System is initializing...</strong> This may take a few minutes. Please wait.</p>
+            <p><strong>🤖 System is initializing with Google Gemini...</strong></p>
+            <p>This may take a few minutes. Please wait.</p>
         </div>
         {% else %}
             <form action="/web-ask" method="post">
-                <h3>Ask Trix a Question:</h3>
-                <textarea name="question" placeholder="Enter your question here..." required>{{ question }}</textarea>
-                <button type="submit">Ask</button>
+                <h3>💬 Ask Trix a Question:</h3>
+                <textarea name="question" placeholder="Hi Trix! What would you like to know about Trikon 2.0?" required>{{ question }}</textarea>
+                <button type="submit">🚀 Ask Trix</button>
             </form>
             
             {% if answer %}
             <div class="answer">
-                <strong>Trix says:</strong>
+                <strong>🔺 Trix says:</strong>
                 <p>{{ answer }}</p>
             </div>
             {% endif %}
         {% endif %}
         
         <div class="status">
-            <p>System Status: 
+            <p>🤖 System Status: 
                 {% if is_initializing %}
-                    Initializing...
+                    <span style="color: #ff9800;">Initializing with Gemini...</span>
                 {% elif qa_system %}
-                    Ready
+                    <span style="color: #4CAF50;">Ready ✅</span>
                 {% elif initialization_error %}
-                    Error
+                    <span style="color: #f44336;">Error ❌</span>
                 {% else %}
-                    Not Initialized
+                    <span style="color: #9e9e9e;">Not Initialized</span>
                     <form action="/initialize" method="post">
                         <button type="submit" class="init-button">Initialize System</button>
                     </form>
@@ -371,7 +403,7 @@ def ask():
     global qa_system, initialization_error
     
     if is_initializing:
-        return jsonify({"status": "initializing", "message": "System is initializing. Please try again later."}), 503
+        return jsonify({"status": "initializing", "message": "System is initializing with Gemini. Please try again later."}), 503
         
     if not qa_system:
         error_msg = initialization_error if initialization_error else "QA system not initialized"
@@ -397,7 +429,8 @@ def health_check():
     status = {
         "status": "healthy",
         "system_initialized": qa_system is not None,
-        "is_initializing": is_initializing
+        "is_initializing": is_initializing,
+        "ai_provider": "Google Gemini"
     }
     
     if initialization_error:
@@ -416,5 +449,5 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
 
     # Start the Flask server — no debug mode in production
-    logger.info(f"Starting server on {host}:{port}")
+    logger.info(f"Starting server with Google Gemini on {host}:{port}")
     app.run(host=host, port=port)
